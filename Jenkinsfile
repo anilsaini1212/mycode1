@@ -3,8 +3,7 @@ pipeline {
  
     stages {
         stage('Maven build') {
-            steps {
-                sh 'echo "Successfull"'
+            steps 
                 sh '''
                     echo "Successfull"
                     ls -la
