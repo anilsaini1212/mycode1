@@ -1,16 +1,13 @@
 pipeline {
     agent any
-
-    stages {
-        stage('Pull code from github') {
-            steps {
-                echo 'Successfull'
-            }
-        }
  
         stage('Maven build') {
             steps {
                 echo 'Successfull'
+                 sh '''
+                    ls -la
+                    cat README.md
+                '''
     
             }
         }
