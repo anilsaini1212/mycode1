@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Maven Build') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "build completed"'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -la
