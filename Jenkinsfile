@@ -2,13 +2,13 @@ pipeline {
     agent any
  
     stages {
-        stage('Maven build') {
-            steps 
-                sh 'echo "Build Done"'
+        stage('Maven Build') {
+            steps {
+                sh 'echo "Hello World"'
                 sh '''
-                    echo "Successfull"
+                    echo "Multiline shell steps works too"
                     ls -la
-                    cat README.md
+                    df -h
                 '''
             }
         }
