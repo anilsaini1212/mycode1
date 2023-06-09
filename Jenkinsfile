@@ -1,14 +1,14 @@
 pipeline {
     agent any
  
-        stage('Maven build') {
+        stage('Maven Build') {
             steps {
-                echo 'Successfull'
-                 sh '''
+                sh 'echo "Successfull"'
+                sh '''
+                    echo "show my file"
                     ls -la
                     cat README.md
                 '''
-    
             }
         }
         
